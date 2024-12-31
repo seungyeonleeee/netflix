@@ -1,3 +1,4 @@
+/* eslint-disable unused-imports/no-unused-vars */
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import { userDataAtom } from "../atoms";
@@ -330,7 +331,7 @@ const Header = () => {
     if (menuOpen) {
       setMenuOpen(false);
     }
-  }, [location]);
+  }, [menuOpen, location]);
 
   // Go To Main
   const goToMain = () => {
@@ -382,7 +383,7 @@ const Header = () => {
         navAnimation.start("top");
       }
     });
-  }, [scrollY]);
+  }, [navAnimation, scrollY]);
 
   return (
     <Nav variants={navVariants} animate={navAnimation} initial={"top"}>

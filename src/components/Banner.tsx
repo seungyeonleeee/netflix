@@ -2,10 +2,10 @@ import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { makeImagePath } from "../utils";
-import { GetMoviesResult, GetSeriesResult, Series, Movie } from "../api";
+import { GetMoviesResult, GetSeriesResult } from "../api";
 import { useSetRecoilState } from "recoil";
 import { isModalAtom } from "../atoms";
-import { isMovie, getTitle } from "../utils/contentTypeChecker";
+import { getTitle } from "../utils/contentTypeChecker";
 
 const Container = styled(motion.section)<{ $bgPhoto: string | undefined }>`
   position: relative;

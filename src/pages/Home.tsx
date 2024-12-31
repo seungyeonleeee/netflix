@@ -6,7 +6,6 @@ import {
   getPopularMovies,
   getTopRatedMovies,
   getUpcomingMovies,
-  Movie,
 } from "../api";
 import Slider from "../components/Slider";
 import Banner from "../components/Banner";

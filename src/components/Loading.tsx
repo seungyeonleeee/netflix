@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import BarLoader from "react-spinners/BarLoader";
 import styled, { useTheme } from "styled-components";
 
