@@ -1,4 +1,4 @@
-/* eslint-disable unused-imports/no-unused-vars */
+/* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import { userDataAtom } from "../atoms";
