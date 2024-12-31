@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { useLocation } from "react-router-dom";
 import styled from "styled-components";
@@ -181,6 +181,10 @@ const Search = () => {
   const handlePageChange = (pageNumber: number) => {
     setCurrentPage(pageNumber);
   };
+
+  useEffect(() => {
+    return;
+  }, [setMoviesPerPage]);
 
   return (
     <>
