@@ -1,5 +1,5 @@
-const API_KEY = `9d225e9b7320979a865e24a4c79106ea`;
-const BASE_PATH = `https://api.themoviedb.org/3`;
+const API_KEY = process.env.REACT_APP_API_KEY;
+const BASE_PATH = process.env.REACT_APP_BASE_PATH;
 
 // Content Data Type
 export interface ContentBase {
