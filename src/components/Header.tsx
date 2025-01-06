@@ -322,7 +322,6 @@ const Header = () => {
 
   // Menu Toggle
   const [menuOpen, setMenuOpen] = useState(false);
-  const location = useLocation();
   const openMenu = () => {
     setMenuOpen((prev) => !prev);
   };
