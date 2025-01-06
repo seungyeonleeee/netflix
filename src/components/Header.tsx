@@ -326,11 +326,6 @@ const Header = () => {
   const openMenu = () => {
     setMenuOpen((prev) => !prev);
   };
-  useEffect(() => {
-    if (menuOpen) {
-      setMenuOpen(false);
-    }
-  }, [menuOpen, location]);
 
   // Go To Main
   const goToMain = () => {
